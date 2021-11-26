@@ -1,0 +1,155 @@
+{
+"1007.test": {
+"smallIconUrl": "https://com-amazon-mas-catalog.s3.amazonaws.com/MH4CMKIWWAWG3%2FM2GUVCBNX20YL2%2Fimages%2F_6236e229-e881-4009-8d31-11bbc5b72956_6c50c0a5f8873fa6005b7a27f95ca441",
+"title": "World News Now - 1 Month",
+"itemType": "SUBSCRIPTION",
+"price": 4.99,
+"description": "8698_30",
+"languageTitleMap": {
+"US": "1 Month"
+},
+"languageDescriptionMap": {
+"US": "8698_30"
+},
+"currencyPriceMap": {
+"US": 0
+},
+"subscriptionParent": "1007.test_5bda0c1034e768183133c291"
+},
+"1008.test": {
+"smallIconUrl": "https://com-amazon-mas-catalog.s3.amazonaws.com/MH4CMKIWWAWG3%2FM7Q5VOW5DHHNG%2Fimages%2F_e25df0be-8183-4189-bea8-fc9d1899ef00_6c50c0a5f8873fa6005b7a27f95ca441",
+"title": "World News Now - 6 Month",
+"itemType": "SUBSCRIPTION",
+"price": 24.99,
+"description": "8701_30",
+"languageTitleMap": {
+"US": "1 Month"
+},
+"languageDescriptionMap": {
+"US": "8701_30"
+},
+"currencyPriceMap": {
+"US": 0
+},
+"subscriptionParent": "1008.test_5bda0c1034e768183133c291"
+},
+"1009.test": {
+"smallIconUrl": "https://com-amazon-mas-catalog.s3.amazonaws.com/MH4CMKIWWAWG3%2FM2VO7R1YEYEK3M%2Fimages%2F_3767a8f4-9735-479c-84a3-570c25023179_6c50c0a5f8873fa6005b7a27f95ca441",
+"title": "World News Now - 12 Month",
+"itemType": "SUBSCRIPTION",
+"price": 64.99,
+"description": "12450_30",
+"languageTitleMap": {
+"US": "1 Month"
+},
+"languageDescriptionMap": {
+"US": "12450_30"
+},
+"currencyPriceMap": {
+"US": 0
+},
+"subscriptionParent": "1009.test_5bda0c1034e768183133c291"
+},
+"1004.test": {
+"smallIconUrl": "https://com-amazon-mas-catalog.s3.amazonaws.com/MH4CMKIWWAWG3%2FM10UXP0Q080X0S%2Fimages%2F_43064e3a-bf89-4bf9-895b-8b49e766f2ac_6c50c0a5f8873fa6005b7a27f95ca441",
+"title": "Faith TV - 1 Month",
+"itemType": "SUBSCRIPTION",
+"price": 4.99,
+"description": "15499_30",
+"languageTitleMap": {
+"US": "1 Month"
+},
+"languageDescriptionMap": {
+"US": "15499_30"
+},
+"currencyPriceMap": {
+"US": 0
+},
+"subscriptionParent": "1004.test_5bf6f11bceff8937cb38628f"
+},
+"1005.test": {
+"smallIconUrl": "https://com-amazon-mas-catalog.s3.amazonaws.com/MH4CMKIWWAWG3%2FM22PXIOYY1UWMD%2Fimages%2F_3390d0ad-da07-485f-9651-96ab626ef198_6c50c0a5f8873fa6005b7a27f95ca441",
+"title": "Faith TV - 6 Months",
+"itemType": "SUBSCRIPTION",
+"price": 24.99,
+"description": "8696_180",
+"languageTitleMap": {
+"US": "6 Months"
+},
+"languageDescriptionMap": {
+"US": "8696_180"
+},
+"currencyPriceMap": {
+"US": 0
+},
+"subscriptionParent": "1005.test_5bf6f11bceff8937cb38628f"
+},
+"1006.test": {
+"smallIconUrl": "https://com-amazon-mas-catalog.s3.amazonaws.com/MH4CMKIWWAWG3%2FM8FNC7CYNZAC5%2Fimages%2F_3384397c-85f3-4b77-895b-3f21315e00b0_6c50c0a5f8873fa6005b7a27f95ca441",
+"title": "Faith TV - 12 Months",
+"itemType": "SUBSCRIPTION",
+"price": 39.99,
+"description": "15501_365",
+"languageTitleMap": {
+"US": "12 Months"
+},
+"languageDescriptionMap": {
+"US": "15501_365"
+},
+"currencyPriceMap": {
+"US": 0
+},
+"subscriptionParent": "1006.test_5bf6f11bceff8937cb38628f"
+},
+"1001.test": {
+"smallIconUrl": "https://com-amazon-mas-catalog.s3.amazonaws.com/MH4CMKIWWAWG3%2FM2FCHQ9HA96BIP%2Fimages%2F_43316399-4d59-4c1e-98d6-0057455ee3b6_6c50c0a5f8873fa6005b7a27f95ca441",
+"title": "Chocie TV - 1 Month",
+"itemType": "SUBSCRIPTION",
+"price": 14.99,
+"description": "8697_365",
+"languageTitleMap": {
+"US": "12 Months"
+},
+"languageDescriptionMap": {
+"US": "8697_365"
+},
+"currencyPriceMap": {
+"US": 0
+},
+"subscriptionParent": "1001.test_5bf6f042ceff8937cb38628b"
+},
+"1002.test": {
+"smallIconUrl": "https://com-amazon-mas-catalog.s3.amazonaws.com/MH4CMKIWWAWG3%2FM3C3V28KJF2MM1%2Fimages%2F_8a46235c-1340-438d-84dc-f66929b90654_6c50c0a5f8873fa6005b7a27f95ca441",
+"title": "Choice TV - 6 Months",
+"itemType": "SUBSCRIPTION",
+"price": 75.99,
+"description": "12448_365",
+"languageTitleMap": {
+"US": "12 Months"
+},
+"languageDescriptionMap": {
+"US": "12448_365"
+},
+"currencyPriceMap": {
+"US": 0
+},
+"subscriptionParent": "1002.test_5bf6f042ceff8937cb38628b"
+},
+"1003.test": {
+"smallIconUrl": "https://com-amazon-mas-catalog.s3.amazonaws.com/MH4CMKIWWAWG3%2FM32YKW608Z4YWH%2Fimages%2F_8fd6fd19-099e-4dbb-9def-9481d9df6d04_6c50c0a5f8873fa6005b7a27f95ca441",
+"title": "Choice TV - 12 Months",
+"itemType": "SUBSCRIPTION",
+"price": 134.99,
+"description": "8693_180",
+"languageTitleMap": {
+"US": "6 Months"
+},
+"languageDescriptionMap": {
+"US": "8693_180"
+},
+"currencyPriceMap": {
+"US": 0
+},
+"subscriptionParent": "1003.test_5bf6f042ceff8937cb38628b"
+}
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="140px" height="50px" viewBox="0 0 140 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>Play-btn Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M0,7.28166168 C0,3.4132427 3.13129286,0.277269514 6.99232671,0.277269514 L127.007673,0.277269514 C130.869429,0.277269514 134,3.40773685 134,7.28168143 L134,30.745784 C134,34.6142139 134,40.8763989 134,43.7227305 L134,37.750196 C134,41.0487357 130.868707,43.7227305 127.007673,43.7227305 L6.99232671,43.7227305 C3.1305713,43.7227305 0,40.5982401 0,36.7183383 L0,7.28166168 Z" id="path-1"></path>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-3" y="-3" width="140" height="49.445461">
+            <rect x="-3" y="-2.72273049" width="140" height="49.445461" fill="white"></rect>
+            <use xlink:href="#path-1" fill="black"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Episode-2" transform="translate(-193.000000, -338.000000)">
+            <g id="Play-btn-Copy" transform="translate(196.000000, 341.000000)">
+                <g id="Rectangle-62" style="mix-blend-mode: darken;">
+                    <use fill="#292929" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    <use stroke="#FFFFFF" mask="url(#mask-2)" stroke-width="6" xlink:href="#path-1"></use>
+                </g>
+                <path d="M16.2308072,15 C15.8579376,15 15.5551533,15.2728242 15.5551533,15.6095915 L15.5551533,29.7900533 C15.5551533,30.1268206 15.8579376,30.4 16.2308072,30.4 L19.289362,30.4 C19.6622316,30.4 19.9654097,30.1268206 19.9654097,29.7900533 L19.9654097,15.6095915 C19.9650173,15.2725008 19.6622401,15 19.289362,15 L16.2308072,15 Z M28.1098748,15 L25.0517138,15 C24.6784504,15 24.3756661,15.2728242 24.3756661,15.6095915 L24.3756661,29.7900533 C24.3756661,30.1268206 24.6784504,30.4 25.0517138,30.4 L28.1098748,30.4 C28.4831382,30.4 28.7859225,30.1268206 28.7859225,29.7900533 L28.7859225,15.6095915 C28.7859386,15.2725008 28.4831374,15 28.1098748,15 Z" id="Shape" fill="#DD4187"></path>
+            </g>
+        </g>
+    </g>
+</svg>

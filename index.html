@@ -1,0 +1,176 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Home</title>
+	<link rel="stylesheet" href="css/mainv2.css">
+	<script src="https://apps.appmastery.co/apps/core-libs/player/hls-0.14.7.js"></script>
+	<meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+   		var vp = document.getElementById('viewport');
+   		var initialScale = Math.max(screen.width, screen.height) / 1920;
+  		vp.setAttribute('content', 'width=device-width, initial-scale=' + initialScale + ', maximum-scale=' + initialScale, +'minimum-scale=' + initialScale);
+  		//backhandle
+  		window.addEventListener("load", function () {
+		    window.addEventListener("popstate", function () {
+		        if (window.history.state !== "backhandler") {
+		            // put your back handler code here
+		            window.history.pushState("backhandler", null, null);
+		        }
+		    });
+		    window.history.pushState("backhandler", null, null);
+		});
+	</script>
+    <script src="https://resources.amazonwebapps.com/v1/latest/Amazon-Web-App-API.min.js" type="text/javascript"></script>
+	<script src="https://resources.amazonwebapps.com/v1/latest/Amazon-Web-App-API-tester.min.js" type="text/javascript"></script>
+ 
+</head>
+
+<body>
+	<div id="scene_spinner" class="scene">
+		<div class="loading">
+			<span>Loading</span>
+			<div class="spinner">
+				<div class="rect1"></div>
+				<div class="rect2"></div>
+				<div class="rect3"></div>
+				<div class="rect4"></div>
+				<div class="rect5"></div>
+			</div>
+		</div>
+	</div>
+	<div class="logo_back"></div>
+	<div id="nav-home-arrows-package" class="nav-arrows " style="display:none">
+		<div class="nav-arrow prev" style="display: none;"></div>
+		<div class="nav-arrow next" style="display: none;"></div>
+	</div>
+
+	<div class="setting-wrapper" id="setting-wrapper">
+		<div class="scene scene_setting" id="setting-container"></div>
+	</div>
+	<div class="scene scene_package" id="scene_package" style="display:none;">
+		<div id="nav-home-arrows-package" class="nav-arrows large" style="display:none">
+			<div class="nav-arrow prev" style="display: none;"></div>
+			<div class="nav-arrow next" style="display: none;"></div>
+		</div>
+
+		<div class="setting-package" id="setting-package" style=""></div>
+	</div>
+	<div class="scene scene_explore_package" id="scene_explore_package" style="display:none;">
+		<div class="detail-content">
+			<h1 id="preview-heading"></h1>
+			<p style="-webkit-line-clamp: 5;" id="preview-discription"></p>
+			<div class="detail-btn-group">
+				<button id="btn-back" class="btn-back active">back</button>
+			</div>
+		</div>
+	</div>
+	<div id="scene_registration" class="signup scene" style="display: none;">
+		<div class="reg-err" id="reg-err"> </div>
+		<div class="logo"></div>
+		<div id="nameLabelSignup" class="nameLabelSignup"> Full Name</div>
+		<input type="text" class="nameSignup" id="nameSignup" text="user name">
+		<div id="emailLabelSignup" class="emailLabelSignup">Email Address</div>
+		<input type="text" class="emailSignup" id="emailSignup" text="Mobile Number">
+		<div id="passwordLabelSignup" class="passwordLabelSignup">Password</div>
+		<input type="password" class="passwordSignup" id="passwordSignup" text="Password">
+		<div id="repasswordLabelSignup" class="repasswordLabelSignup">Re-enter Password</div>
+		<input type="password" class="repasswordSignup" id="repasswordSignup" text="Password">
+		<ul id="SignupButton" class="authOptionList SignupButton">
+			<div class="signupbtn" id="signupbtn" style="">
+				<div class="signup-text" style="">Next</div>
+				<div class="signup-line" style=""></div>
+				<div class="signup-tringle" style=""></div>
+			</div>
+		</ul>
+	</div>
+	<div class="scene scene_payment" id="scene_payment" style="display:none;">
+		<div class="make-payment" id="make-payment" style="display: block;">
+			<form action="" id="payment-form">
+				<div class="payment-text" id="payment-text">Paymentamount</div>
+				<div class="payment-amt " id="payment-amt">$500</div>
+				<div class="bounding-box-edit bounding-box-edit" id="bounding-box-edit">
+					<button class="edit-btn" id="payment-edit">Edit</button>
+				</div>
+				<label class="lable-cardname lable-cardname" id="lable-cardname">Name on card</label>
+				<input type="text" class="textbox-name textbox-name-payment" id="textbox-name-payment"
+					data-stripe="name" name="name-on-card">
+				<label class="lable-card-number" id="lable-card-number">Card Number</label>
+				<input type="text" class="textbox-card-number " data-stripe="number" id="textbox-card-number">
+				<label class="lable-exp-date lable-exp-date-MM" id="lable-exp-date-MM">MM</label>
+				<label class="lable-exp-date lable-exp-date-YY" id="lable-exp-date-YY">YYYY</label>
+				<input type="text" class="textbox-exp-dateMM " data-stripe="exp-month" id="textbox-exp-dateMM">
+				<input type="text" class="textbox-exp-dateYY " data-stripe="exp-year" style="" id="textbox-exp-dateYY">
+				<label class="lable-security-code " id="lable-security-code">Security Code</label>
+				<input type="text" class="textbox-security-code " data-stripe="cvc" id="textbox-security-code">
+				<label class="lable-zip" id="lable-zip">ZIP / Postal code</label>
+				<input type="text" class="textbox-zip " data-stripe="address_zip" id="textbox-zip">
+				<div class="pay-button " id="pay-button">
+					<div class="text">Pay</div>
+					<div class="line"></div>
+					<div class="triangle"></div>
+				</div>
+		</div>
+		<div class="payment-error" id="payment-error"></div>
+		</form>
+	</div>
+
+	<div id="am-cont"></div>
+	<div class="app-container" id="home-container"></div>
+	<div class="app-container" id="detail-container"></div>
+
+
+
+	<div id="scene_player" class="scene player_background">
+		<!--<video id="videoPlayer" width="1920" height="1080" tabindex="0"></video>-->
+		<video id="videoPlayer" class="videoPlayer" width="1920" height="1080" tabindex="0"></video>
+		<object id="av-player" class="av_player" type="application/avplayer"></object>
+		<span id="subtitleArea" class="subtitleArea"></span>
+		<div id="skip_text" class="skip_text"></div>
+		<div id="player">
+			<!--
+                <div class="audio_level" id="audio_level">
+					<div class="audio_level_progress" id="audio_level_progress"></div>
+                </div>
+                -->
+			<div class="control_container" id="control_container">
+				<div class="player_control" id="player_control_buttons">
+					<ul>
+						<li data-id=1 id="playbtn" class="selected">
+							<div id="playbtndiv" class="play play_selected"></div>
+						</li>
+						<li data-id=2 id="pausebtn">
+							<div id="pausebtndiv" class="pause"></div>
+						</li>
+					</ul>
+				</div>
+				<div class="progress" id="progress">
+					<div class="progress_level" id="progress_level"></div>
+				</div>
+				<div class="player_time" id="player_time">00:00:00/00:00:00</div>
+				<div class="sound" id="sound">
+					<ul class="sound_settings" id="sound_settings">
+						<li><span>Stereo</span></li>
+						<li><span>Dolby</span></li>
+					</ul>
+				</div>
+				<div class="subtitle" id="subtitle">
+					<ul class="subtitle_settings" id="subtitle_settings">
+					</ul>
+				</div>
+				<div class="in_player_control">
+					<div class="player_video_control in_player_buttons" id="in_player_control">
+						<ul class="video_control_buttons" id="in_player_control_ul">
+						</ul>
+					</div>
+				</div>
+				<div class="live_tag" id="live_tag">LIVE</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="js/appmastery_v.js"></script>
+<script type="text/javascript" src="js/player-release1.40.js"></script>
+
+</html>

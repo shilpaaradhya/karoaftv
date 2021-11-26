@@ -1,0 +1,434 @@
+.player-playlist {
+    position: fixed;
+    bottom: 0;
+    padding: 60px 0;
+    width: 100%;
+    background-image: linear-gradient(-180deg, transparent 0, #000 50%)
+}
+.control_container,
+.player_control li {
+    background: #1f2429;
+    border: 2.3px solid #383939
+}
+#player {
+    display: none;
+    position: absolute;
+    z-index: 9999;
+    top: 778.5px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+#player.pullup {
+    top: 628.5px
+}
+#player.show {
+    display: block
+}
+.control_container {
+    position: absolute;
+    left: 259.5px;
+    width: 1430px;
+    z-index: 2;
+    display: none;
+    height: 78px
+}
+.player_control,
+.progress {
+    position: relative;
+    float: left
+}
+.control_container.show {
+    display: block
+}
+.player_control {
+    width: 105px
+}
+.player_control ul {
+    margin: 0;
+    padding: 0;
+    display: inline-block
+}
+.player_control li {
+    width: 105px;
+    height: 75px;
+    float: left
+}
+.player_control li.hover,
+.player_control li.selected {
+    background: #0a75cb;
+    border: 2.3px solid #383939
+}
+.progress {
+    margin: 31.5px 0 0 30px;
+    padding: 0;
+    height: 12px;
+    width: 975px;
+    background: #000;
+    vertical-align: middle
+}
+.progress.hover {
+    height: 84px;
+    border: 8.3px solid #047DC1;
+    width: 1218px
+}
+.progress.selected {
+    border: 8.3px solid #FFF
+}
+.progress_level {
+    background: #0a75cb;
+    width: 0;
+    height: 12px
+}
+.audio_control,
+.audio_control li {
+    float: left;
+    width: 138px;
+    position: relative
+}
+.progress_level.hover {
+    height: 12px
+}
+.progress_level.selected {
+    background: #047DC1;
+    border: 2.3px solid #000
+}
+.audio_control {
+    display: none
+}
+.audio_control ul {
+    margin: 0;
+    padding: 0;
+    display: inline-block
+}
+.audio,
+.audio_level {
+    display: none;
+    width: 54px
+}
+.audio_control li {
+    height: 91.5px;
+    background: #2F2F2F;
+    border: 2.3px solid #383939
+}
+.audio,
+.fastforward,
+.pause,
+.play,
+.stop {
+    background-repeat: no-repeat;
+    position: relative
+}
+.rewind,
+.rewind_hover {
+    background-image: url(../img/rewind_hover.png)
+}
+.sound li,
+.subtitle li {
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .5) 0 2px 4px 5px rgba(0, 0, 0, .5)
+}
+.duration {
+    position: relative;
+    left: 1202px;
+    font-size: 72px;
+    color: #FFF;
+    line-height: 75px
+}
+.sound li span,
+.subtitle li span {
+    line-height: 75px;
+    font-family: SFUIText-Bold;
+    font-size: 24px;
+    letter-spacing: .1px
+}
+.rewind {
+    position: relative;
+    width: 121.5px;
+    height: 81px;
+    margin: 30px;
+    background-size: cover
+}
+.pause,
+.play {
+    width: 49.5px;
+    height: 72px;
+    margin: 15px 0 0 34.5px;
+    background-size: 80%
+}
+.play,
+.play_hover {
+    background-image: url('http://apps.appmastery.co/apps/dekkoo/tizen/img/pausecontrol.png')
+}
+.pause,
+.pause_hover {
+    background-image: url('http://apps.appmastery.co/apps/dekkoo/tizen/img/playcontrol.png')
+}
+.fastforward,
+.stop {
+    background-size: cover
+}
+.fastforward,
+.fastforward_hover {
+    background-image: url(../img/forward_hover.png)
+}
+.fastforward {
+    width: 121.5px;
+    height: 81px;
+    margin: 30px 45px
+}
+.stop {
+    width: 54px;
+    height: 54px;
+    margin: 20px 38px;
+    background-image: url(../img/stop_hover.png)
+}
+.stop_hover {
+    background-image: url(../img/stop.png)
+}
+.audio {
+    height: 55px;
+    margin: 4px 15px;
+    background-image: url(../img/audio.png)
+}
+.audio_level,
+.audio_level_progress {
+    position: relative;
+    height: 226px;
+    border: 1px solid #FFF
+}
+.audio_hover {
+    background-image: url(../img/audio_hover.png)
+}
+.audio_level {
+    top: 359px;
+    left: 1202px;
+    background: #047DC1
+}
+.audio_level_progress {
+    background: #000
+}
+.sound,
+.sound li {
+    background: #2F2F2F
+}
+.player_time {
+    width: 300px;
+    height: 75px;
+    position: absolute;
+    z-index: 2;
+    top: 1px;
+    left: 1392px
+}
+.sound,
+.subtitle {
+    z-index: 5;
+ /*   top: 814px */
+}
+.sound {
+    display: none;
+    position: absolute;
+    border: 1px solid #000;
+    left: 1140px;
+}
+.sound li,
+.sound ul {
+    position: relative;
+    width: 276px;
+    padding: 0;
+    margin: 0;
+}
+.sound.only,
+.subtitle {
+    left: 1647px
+}
+.sound.show {
+    display: block
+}
+.sound ul {
+    height: 154px
+}
+.sound li {
+    height: 75px;
+    border: 1px solid #383939
+}
+.sound li.selected {
+    background: #000
+}
+.sound li.hover {
+    background: #047DC1
+}
+.sound li.selected {
+    background-image: url('http://apps.appmastery.co/apps/dekkoo/tizen/img/selected.png');
+    background-repeat: no-repeat;
+    background-position: right
+}
+.subtitle,
+.subtitle li {
+    width: 276px;
+    background: #2F2F2F
+}
+.sound li span {
+    display: block;
+    padding-left: 60px;
+    color: #FFF
+}
+.subtitle {
+    display: none;
+    position: absolute;
+    height: 154px;
+    border: 1px solid #000;
+    overflow: hidden;
+    top: 40px;
+}
+.subtitle li,
+.subtitle ul {
+    position: relative;
+    padding: 0;
+    margin: 0
+}
+.av_player,
+.live_tag,
+.player_time,
+.relatedCarousel,
+.relatedTitle,
+.skip_text,
+.subtitleArea,
+.videoPlayer,
+.vod-carousel {
+    position: absolute
+}
+.subtitle.show {
+    display: block
+}
+.subtitle li {
+    height: 75px;
+    border: 1px solid #383939
+}
+.subtitle li.selected {
+    background: #000
+}
+.subtitle li.hover {
+    background: #047DC1
+}
+.subtitle li.selected {
+    background-image: url('http://apps.appmastery.co/apps/dekkoo/tizen/img/selected.png');
+    background-repeat: no-repeat;
+    background-position: right
+}
+.subtitle li span {
+    display: block;
+    padding-left: 60px;
+    color: #FFF
+}
+.skip_text,
+.subtitleArea {
+    z-index: 9999;
+    font-size: 90px;
+    text-align: center;
+    -webkit-text-stroke-color: #000;
+    color: #FFF
+}
+.av_player {
+    display: none;
+    height: 1080px;
+    width: 1920px
+}
+.av_player.show {
+    display: block
+}
+.videoPlayer {
+    display: none;
+    top: 0;
+    left: 0
+}
+.videoPlayer.show {
+    display: block
+}
+.skip_text {
+    display: none;
+    top: 100px;
+    left: 1550px;
+    width: 350px;
+    height: 120px;
+    -webkit-text-stroke-width: 4px
+}
+.skip_text.show {
+    display: block
+}
+.subtitleArea {
+    display: none;
+    top: 780px;
+    left: 250px;
+    width: 1420px;
+    height: 200px;
+    -webkit-text-stroke-width: 2px
+}
+.subtitleArea.show {
+    display: block
+}
+.player_time {
+    display: none;
+    left: 0;
+    font-size: 33px;
+    color: #FFF;
+    width: 300px;
+    position: absolute;
+    left: 1125px;
+    line-height: 78px;
+}
+.player_time.show {
+    display: block
+}
+.live_tag {
+    display: none;
+    top: 20px;
+    left: 25px;
+    font-size: 40px;
+    color: #FFF
+}
+.adbanner,
+.live_tag.show {
+    display: block
+}
+.streamli{
+    background-image: url('http://apps.appmastery.co/apps/dekkoo/tizen/img/stream.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100px;
+    height: 53px;
+    position: absolute;
+    top: 15px;
+}
+.streamli.hover{
+    background-image: url('http://apps.appmastery.co/apps/dekkoo/tizen/img/stream-hover.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 140px;
+    height: 74px;
+    top: -5px;
+    left: -15px;
+}
+.subtitleli {
+    background-image: url('http://apps.appmastery.co/apps/dekkoo/tizen/img/subtitle.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100px;
+    height: 92px;
+}
+.subtitleli.hover{
+    background-image: url('http://apps.appmastery.co/apps/dekkoo/tizen/img/subtitle-hover.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 140px;
+    height: 105px;
+    top: -15px;
+    position: absolute;
+    left: -18px;
+}
+
+.subtitle{
+    left: 1450px;
+}
+
+.subtitleArea{
+    font-size: 60px;
+}
